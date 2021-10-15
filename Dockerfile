@@ -11,6 +11,6 @@ ENV NODE_ENV=production
 COPY . .
 RUN npm run build
 ENV PORT=8080
-ENV HOST=0.0.0.0
+ENV HOST=::
 EXPOSE 8080
 CMD ["node", "build/server"]
